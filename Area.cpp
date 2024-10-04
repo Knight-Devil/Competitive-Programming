@@ -7,6 +7,5 @@ int main()
     int l, b;
     cin >> l >> b;
     cout << l * b * 1LL << "\n";
-
     return 0;
 }
