@@ -1,19 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int factorial(int x)
+int factorial(int n)
 {
-    if (x != 1)
-        x *= factorial(x - 1);
-    return x;
+    if (n - 1 >= 1)
+        return factorial(n - 1) * n;
+    else
+        return 1;
 }
 
 int main()
 {
     int n;
     cin >> n;
-
-    cout << factorial(n) << "\n";
-
-    return 0;
+    cout << factorial(n) << endl;
 }
